@@ -66,10 +66,15 @@ h1, h2, h3, h4, h5, h6, ul {
 	margin-top: 0;
 	&__name {
 		margin-top: 0;
+		margin-left: 3px;
 		font-family: 'Open Sans', serif;
 		font-size: 18px;
 		letter-spacing: 0.7px;
 		margin-bottom: 30px;
+	}
+	&__name-top {
+		margin-top: 16px;
+		margin-left: 0;
 	}
 	&__title {
 		font-size: 48px;
@@ -90,7 +95,7 @@ h1, h2, h3, h4, h5, h6, ul {
 		margin-bottom: 24px;
 		font-family: 'Open Sans', serif;
 		font-size: 15px;
-		letter-spacing: 0.7px;
+		letter-spacing: 0.75px;
 		line-height: 24px;
 	}
 	&__btn {
@@ -121,5 +126,29 @@ h1, h2, h3, h4, h5, h6, ul {
 	}
 	small {
 		font-style: italic;
+	}
+}
+
+.page {
+	padding-top: 160px;
+}
+
+
+.block-author {
+	display: flex;
+	justify-content: space-between;
+}
+
+.block-ava {
+
+	position: relative;
+	&__svg {
+		position: absolute;
+		right: 0;
+		z-index: -1;
+	}
+	&__img {
+		margin-top: 47px;
+		margin-right: 44px;
 	}
 }
