@@ -225,6 +225,13 @@ h3 {
 	}
 }
 
+.block-slider {
+	background-color: red;
+	display: flex;
+	&__item{
+		max-width: 300px;
+	}
+}
 
 .block-author {
 	display: flex;
@@ -445,4 +452,160 @@ h3 {
 .book-about__title {
 	margin-top: 35px;
 	letter-spacing: 1px;
+}
+
+.blog {
+	margin: 75px 0 68px 0;
+	display: flex;
+	justify-content: center;
+	&__item {
+		flex-basis: 370px;
+		margin: 0px 15px;
+		&__title {
+			font-size: 18px;
+			letter-spacing: 0.9px;
+		}
+		&__info {
+			margin-top: 4px;
+			margin-bottom: 0;
+			font-family: 'Open Sans', serif;
+			a {
+				text-decoration: none;
+				color: $accent-color;
+			}
+		}
+		&__desc{
+			margin-top: 11px;
+			font-family: 'Open Sans', serif;
+			letter-spacing: 0.7px;
+		}
+	}
+	&-photo {
+		width: 370px;
+		height: 225px;
+		margin-bottom: 15px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&-btn {
+		margin: 0 auto;
+		padding: 0 6px;
+		font-size: 18px;
+		text-decoration: none;
+		letter-spacing: 1.2px;
+		line-height: 50px;
+	}
+}
+
+.block-letter {
+	display: flex;
+	justify-content: space-between;
+	&__item {
+		flex-basis: 49%;
+		h2 {
+			margin-top: 5px;
+			font-size: 48px;
+			margin-bottom: 25px;
+			letter-spacing: 2px;
+		}
+		p {
+			font-family: 'Open Sans', serif;
+			font-size: 15px;
+			letter-spacing: 0.75px;
+			line-height: 24px;
+		}
+		&__input {
+			margin-bottom: 20px;
+			box-sizing: border-box;
+			display: block;
+			width: 100%;
+			padding: 15px 27px;
+			background-color: $bg-dark-color;
+			border: none;
+			border-radius: 3px;
+			color: #6B6B85;
+			font-family: 'Open Sans', serif;
+		}
+		&__btn {
+			box-sizing: border-box;
+			display: block;
+			width: 100%;
+			padding: 15px 27px;
+			background: linear-gradient(to top left, #65e49c, #65e4af);
+			border: none;
+			border-radius: 3px;
+			color: $light-color;
+			font-family: 'Open Sans', serif;
+		}
+	}
+}
+footer {
+	background-color: $bg-dark-color;
+	padding: 160px 0 190px 0;
+}
+.block-footer {
+	display: flex;
+	justify-content: space-between;
+	background-color: $bg-dark-color;
+	&__bukee {
+		flex-basis: 370px;
+		&__logo {
+			display: block;
+			width: 137px;
+			height: 28px;
+			margin-bottom: 26px;
+			background-image: url(../img/Logo.svg);
+		}
+		&__about {
+			margin-bottom: -15px;
+			font-family: 'Open Sans', serif;
+			font-size: 15px;
+			color: $light-color;
+			letter-spacing: 0.75px;
+			line-height: 24px;
+		}
+	}
+
+	&__links {
+		flex-basis: 270px;
+		li {
+			margin-bottom: 4px;
+			list-style-type: none;
+			a{
+				text-decoration: none;
+				font-family: 'Open Sans', serif;
+				font-size: 15px;
+				color: $light-color;
+				letter-spacing: 0.75px;
+				line-height: 24px;
+			}
+		}
+	}
+
+	&__contacts {
+		flex-basis: 270px;
+		&>ul {
+			display: flex;
+			margin-top: 25px;
+			justify-content: flex-start;
+			&>li {
+				margin-right: 13px;
+				list-style-type: none;
+				&>a {
+					text-decoration: none;
+					color: $accent-color;
+				}
+			}
+		}
+	}
+	&__subtitle {
+		margin: 10px 0 20px 0;
+		font-size: 18px;
+		text-transform: uppercase;
+		color: $accent-color;
+		letter-spacing: 1px;
+	}
 }
